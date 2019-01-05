@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height:600px;
+            background-color: #aaa;
+
+            display:table;
+        }
+        .box { 
+           display: table-cell;
+           vertical-align: middle;
+           text-align: center;
+        }
+.container::before{
+    content:"";
+    display:inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.box{
+    vertical-align: middle;
+    width: 300px;
+    padding: 15px;
+    /*height:200px;*/
+    background-color: aqua;
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="box">
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, dolorem exercitationem. Nisi dolorem numquam, at sapiente distinctio ullam dignissimos alias tenetur nostrum nihil? Rem voluptatibus debitis unde assumenda optio possimus.</div>
+
+    </div>
+    <div class="box2">
+        <!-- <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias rerum eius, magni cumque est cum! Doloremque esse, dicta, officia quas accusamus magnam vero omnis ducimus iusto saepe voluptas accusantium libero.</div>
+    </div>
+    <div class="box3">
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias rerum eius, magni cumque est cum! Doloremque esse, dicta, officia quas accusamus magnam vero omnis ducimus iusto saepe voluptas accusantium libero.</div> -->
+        </div>
+</div>
+</body>
+</html>
